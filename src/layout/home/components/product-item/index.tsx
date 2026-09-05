@@ -7,10 +7,10 @@ import * as Styles from './styles'
 import { ProductItemProps } from './types'
 
 export function ProductItem (props: ProductItemProps) {
-  const { 
+  const {
     data: {
       images: [image],
-      sizes,
+      sizes = [],
       name,
       price,
       promotion,
@@ -18,77 +18,35 @@ export function ProductItem (props: ProductItemProps) {
       id,
       sku,
       is_sold_out
-    } 
+    }
   } = props
 
-  const renderDiscountTag = () => {
-    if (!promotion?.value) return null
+  const discountedPrice = promotion?.value ? price * promotion.value : price
 
-    const discount = promotion.value * 100
-
-    return (
-      <Tag variant="discount">{`sale ${discount}%`}</Tag>
-    )
-  }
-
-  const renderNewTag = () => {
-    if (!is_new) return null
-
-    return (
-      <Styles.Tag style={{ background: '#81ecec' }}>new</Styles.Tag>
-    )
-  }
-
-  const renderSoldOut = () => {
-    if (!is_sold_out) return null
-
-    return (
-      <Styles.Tag style={{ background: '#b2bec3' }}>sold out</Styles.Tag>
-
-    )
-  }
-
-
-
-  const renderDiscount = () => {
-    if (!promotion.value) return null
-
-    const priceWithDiscount = (price * promotion.value)
-    return (
-      <>
-        <Styles.PriceWithDiscount>{toLocaleString(price)}</Styles.PriceWithDiscount>
-        <Typography size="md" fontWeight="500" color="heading">{toLocaleString(priceWithDiscount)}</Typography>
-      </>
-    )
-  }
-
-  const renderPrice = () => {
-    if (promotion.value) return null
-
-    return (
-      <Typography size="md" fontWeight="500" color="heading">{toLocaleString(price)}</Typography>
-    )
-  }
-  
   return (
-    <Link href={resolvePath(paths.product.show, {
-      sku,
-      id
-    })}>
+    <Link href={resolvePath(paths.product.show, { sku, id })}>
       <Styles.Container>
         <Styles.TagView>
-          {renderDiscountTag()}
-          {renderNewTag()}
-          {renderSoldOut()}
+          {promotion?.value && <Tag variant="discount">{`sale ${promotion.value * 100}%`}</Tag>}
+          {is_new && <Styles.Tag>new</Styles.Tag>}
+          {is_sold_out && <Styles.Tag>sold out</Styles.Tag>}
         </Styles.TagView>
+
         <Styles.Figure>
-          <Image src={image} alt="" fill />
+          {image && <Image src={image} alt={name} fill sizes="(max-width: 768px) 85vw, 30vw" />}
         </Styles.Figure>
+
         <Styles.Info>
           <Typography size="xsm" color="text">{`${sizes.length} package`}</Typography>
           <Typography as="strong" fontWeight="400" color="heading" size="md">{name}</Typography>
-          {renderPrice()}
-          {renderDiscount()}
+          {promotion?.value ? (
+            <>
+              <Styles.PriceWithDiscount>{toLocaleString(price)}</Styles.PriceWithDiscount>
+              <Typography size="md" fontWeight="500" color="heading">{toLocaleString(discountedPrice)}</Typography>
+            </>
+          ) : (
+            <Typography size="md" fontWeight="500" color="heading">{toLocaleString(price)}</Typography>
+          )}
         </Styles.Info>
       </Styles.Container>
     </Link>

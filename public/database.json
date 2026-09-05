@@ -77,8 +77,8 @@
       ],
       "images": [
         "/images/duffel1.jpg",
-        "/images/duffel2.jpg",
-        "/images/duffel3.jpg"
+        "/images/duffle4.jpg",
+        "/images/duffel5.jpg"
       ]
     },
     {
@@ -110,9 +110,7 @@
         }
       ],
       "images": [
-        "/images/duffel1.jpg",
-        "/images/duffel2.jpg",
-        "/images/duffel3.jpg"
+        "/images/backpack.jpg"
       ]
     },
     {
@@ -144,9 +142,7 @@
         }
       ],
       "images": [
-        "/images/duffel1.jpg",
-        "/images/duffel2.jpg",
-        "/images/duffel3.jpg"
+        "/images/toiletbag.jpg"
       ]
     },
     {
@@ -178,9 +174,10 @@
         }
       ],
       "images": [
-        "/images/duffel1.jpg",
-        "/images/duffel2.jpg",
-        "/images/duffel3.jpg"
+        "/images/duffel3.jpg",
+        "/images/duffel4.jpg",
+        "/images/duffel5.jpg",
+        "/images/duffel6.jpg"
       ]
     },
     {
@@ -216,9 +213,8 @@
         }
       ],
       "images": [
-        "/images/duffel1.jpg",
-        "/images/duffel2.jpg",
-        "/images/duffel3.jpg"
+        "/images/laptopsleeve.jpg",
+        "/images/laptopsleeve2.jpg"
       ]
     },
     {
@@ -256,9 +252,212 @@
         }
       ],
       "images": [
-        "/images/duffel1.jpg",
-        "/images/duffel2.jpg",
-        "/images/duffel3.jpg"
+        "/images/sanitarybag.jpg"
+      ]
+    },
+    {
+      "sku": "TSHIRT-BLACKBADDIE-001",
+      "id": 8,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "tshirts",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Stylish Black Baddie T-shirt.",
+      "rate": 5,
+      "name": "Black Baddie T-Shirt",
+      "price": 30000,
+      "sizes": [
+        {
+          "label": "Small",
+          "value": 1
+        },
+        {
+          "label": "Medium",
+          "value": 1
+        },
+        {
+          "label": "Large",
+          "value": 1
+        },
+        {
+          "label": "XL",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#000000"
+        }
+      ],
+      "images": [
+        "/images/blackbaddie.png"
+      ]
+    },
+    {
+      "sku": "TSHIRT-TRUDYSAG3-001",
+      "id": 9,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "tshirts",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Stylish Trudy Sag T-shirt.",
+      "rate": 5,
+      "name": "Trudy Sag T-Shirt",
+      "price": 30000,
+      "sizes": [
+        {
+          "label": "Small",
+          "value": 1
+        },
+        {
+          "label": "Medium",
+          "value": 1
+        },
+        {
+          "label": "Large",
+          "value": 1
+        },
+        {
+          "label": "XL",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#000000"
+        }
+      ],
+      "images": [
+        "/images/trudy sag3.png"
+      ]
+    },
+    {
+      "sku": "TSHIRT-TRUDYSAG1-001",
+      "id": 10,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "tshirts",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Stylish Trudy Sag T-shirt.",
+      "rate": 5,
+      "name": "Trudy Sag T-Shirt 2",
+      "price": 30000,
+      "sizes": [
+        {
+          "label": "Small",
+          "value": 1
+        },
+        {
+          "label": "Medium",
+          "value": 1
+        },
+        {
+          "label": "Large",
+          "value": 1
+        },
+        {
+          "label": "XL",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#000000"
+        }
+      ],
+      "images": [
+        "/images/trudy sag1.png"
+      ]
+    },
+    {
+      "sku": "TSHIRT-DRINGS-001",
+      "id": 11,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "tshirts",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Stylish D-Rings T-shirt.",
+      "rate": 5,
+      "name": "D-Rings T-Shirt",
+      "price": 30000,
+      "sizes": [
+        {
+          "label": "Small",
+          "value": 1
+        },
+        {
+          "label": "Medium",
+          "value": 1
+        },
+        {
+          "label": "Large",
+          "value": 1
+        },
+        {
+          "label": "XL",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#000000"
+        }
+      ],
+      "images": [
+        "/images/drings.png"
+      ]
+    },
+    {
+      "sku": "TSHIRT-BLACKCROP-001",
+      "id": 12,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "tshirts",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Stylish black crop T-shirt.",
+      "rate": 5,
+      "name": "Black Crop T-Shirt",
+      "price": 30000,
+      "sizes": [
+        {
+          "label": "Small",
+          "value": 1
+        },
+        {
+          "label": "Medium",
+          "value": 1
+        },
+        {
+          "label": "Large",
+          "value": 1
+        },
+        {
+          "label": "XL",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#000000"
+        }
+      ],
+      "images": [
+        "/images/black crop1.png"
       ]
     }
   ],
@@ -270,7 +469,7 @@
         "image": "/images/duffel1.jpg",
         "action": {
           "label": "Shop Now",
-          "path": "/collections/duffelbags"
+          "path": "/products"
         }
       },
       {
@@ -279,7 +478,7 @@
         "image": "/images/scrunch1.jpg",
         "action": {
           "label": "Shop Now",
-          "path": "/collections/scrunchies"
+          "path": "/products"
         }
       }
     ],
@@ -287,17 +486,38 @@
       {
         "id": 1,
         "title": "Duffel Bags",
-        "productIds": [2, 3, 4, 5, 6]
+        "productIds": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       },
       {
         "id": 2,
         "title": "Scrunchies",
-        "productIds": [1]
+        "productIds": [
+          1
+        ]
       },
       {
         "id": 3,
         "title": "Accessories",
-        "productIds": [7]
+        "productIds": [
+          7
+        ]
+      },
+      {
+        "id": 4,
+        "title": "T-Shirts",
+        "productIds": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
       }
     ],
     "collection_banner": [
@@ -310,11 +530,24 @@
         "collection_type": "Scrunchies"
       },
       {
-        "image": "/images/duffel3.jpg",
-        "collection_type": "Accessories"
+        "image": "/images/blackbaddie.png",
+        "collection_type": "T-Shirts"
       }
     ],
-    "arrivals": [1, 2, 3, 4, 5, 6, 7],
+    "arrivals": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
     "season_sale": {
       "title": "Special Offer",
       "description": "Quality products at affordable prices",
@@ -351,6 +584,15 @@
           "path": "/collections/accessories"
         },
         "image": "/images/duffel3.jpg"
+      },
+      {
+        "id": 4,
+        "title": "T-Shirts",
+        "action": {
+          "label": "Shop Now",
+          "path": "/collections/tshirts"
+        },
+        "image": "/images/blackbaddie.png"
       }
     ]
   },
@@ -358,17 +600,38 @@
     {
       "slug": "duffelbags",
       "title": "Duffel Bags",
-      "products": [2, 3, 4, 5, 6]
+      "products": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
     },
     {
       "slug": "scrunchies",
       "title": "Scrunchies",
-      "products": [1]
+      "products": [
+        1
+      ]
     },
     {
       "slug": "accessories",
       "title": "Accessories",
-      "products": [7]
+      "products": [
+        7
+      ]
+    },
+    {
+      "slug": "tshirts",
+      "title": "T-Shirts",
+      "products": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     }
   ]
 }

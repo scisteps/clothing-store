@@ -1,17 +1,29 @@
 import { styled } from 'stitches.config'
 
 export const Container = styled('div', {
-  position: 'relative'
+  position: 'relative',
+  transition: 'transform .35s ease',
+  '&:hover': {
+    transform: 'translateY(-6px)'
+  }
 })
 
 export const Figure = styled('figure', {
   width: '300px',
   height: '300px',
   position: 'relative',
-
+  overflow: 'hidden',
+  background: '$foreground',
   '@table-min': {
     width: '400px',
     height: '400px',
+  },
+  img: {
+    objectFit: 'cover',
+    transition: 'transform .6s ease'
+  },
+  '&:hover img': {
+    transform: 'scale(1.025)'
   }
 })
 
@@ -19,7 +31,7 @@ export const Info = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   gap: '0.5rem',
-  padding: '2rem 0'
+  padding: '1.5rem 0 2rem'
 })
 
 export const TagView = styled('div', {
@@ -28,7 +40,7 @@ export const TagView = styled('div', {
   left: '10px',
   display: 'flex',
   flexDirection: 'column',
-  gap: '1rem',
+  gap: '0.5rem',
   zIndex: 3,
 })
 
@@ -38,9 +50,10 @@ export const PriceWithDiscount = styled('span', {
 })
 
 export const Tag = styled('div', {
-  padding: '4px 8px 2px 8px',
-  color: '$ancesst8',
+  padding: '5px 9px',
+  color: '$foreground',
+  background: '$primary',
   textTransform: 'uppercase',
-  fontSize: '0.78rem',
+  fontSize: '0.72rem',
   width: 'max-content'
 })

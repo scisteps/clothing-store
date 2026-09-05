@@ -20,7 +20,7 @@ export const Figure = styled('figure', {
 
 
 export const Title = styled('strong', {
-  color: '$ancesst8',
+  color: '$heading',
   fontSize: '$lg',
   fontWeight: 500,
   width: 'max-content'
@@ -39,7 +39,7 @@ export const Content = styled('div', {
   gap: '0.5rem',
 
   '&:hover': {
-    borderColor: '$ancesst8',
+    borderColor: '$primary',
     [`${Title}`]: {
       color: '$ancesst0'
     }

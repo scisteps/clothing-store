@@ -1,19 +1,23 @@
 import { styled } from 'stitches.config'
 
 export const Container = styled('footer', {
-  background: '$foreground',
-  padding: '4rem 1rem'
+  borderTop: '1px solid $border',
+  marginTop: '5rem',
+  padding: '4rem 0 2rem'
 })
 
-export const List = styled('ul', {
-  listStyle: 'none',
-  
+export const Contact = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '1rem',
+  padding: '2rem 0 4rem',
+  maxWidth: '620px',
   a: {
-    fontWeight: 400,
-    paddingTop: '0.5rem',
-    display: 'inline-block',
-    '&:hover, &:focus': {
-      color: '$heading'
-    }
+    width: 'max-content',
+    padding: '0.8rem 1.2rem',
+    background: '$primary',
+    color: '$foreground',
+    transition: 'transform .3s ease',
+    '&:hover': { transform: 'translateY(-3px)' }
   }
 })

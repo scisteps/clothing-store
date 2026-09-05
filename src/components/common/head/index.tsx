@@ -42,8 +42,8 @@ export function Head (props: HeadProps) {
       {twitterMeta.title && <meta property="twitter:title" content={twitterMeta.title} />}
       {twitterMeta.image && <meta property="twitter:image" content={twitterMeta.image} />}
       {twitterMeta.description && <meta property="twitter:description" content={twitterMeta.description} />}
-      <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="theme-color" content="#ffffff" />
+      <meta name="msapplication-TileColor" content="#F69267" />
+      <meta name="theme-color" content="#FDCFAD" />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       <link rel="icon" type="image/png" href="/favicon.ico" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

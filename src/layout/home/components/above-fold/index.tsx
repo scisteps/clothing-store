@@ -84,7 +84,7 @@ export function AboveFold (props: AboveFoldProps) {
         />
       </Styles.Figure>
     </div>
-  )), [])
+  )), [data])
   
   if (!data) return null
 

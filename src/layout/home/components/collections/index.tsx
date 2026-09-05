@@ -86,16 +86,8 @@ export function Collections (props: CollectionsProps) {
   , [currentSlide, instanceRef, isLoading])
   
   return (
-    <Container size="lg">
-      <Styles.Container>
-        <SectionTitle>Our Collections</SectionTitle>
-        <div ref={sliderRef} className="keen-slider">
-          {renderSlides}
-        </div>
-        <Styles.DotContainer>
-          {renderDots}
-        </Styles.DotContainer>
-      </Styles.Container>
-    </Container>
+    <div>
+      
+    </div>
   )
 }

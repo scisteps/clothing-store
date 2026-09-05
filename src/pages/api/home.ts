@@ -24,9 +24,14 @@ export default function handler (req: NextApiRequest, res: NextApiResponse) {
     }
   })
 
+  const tshirts = db.products.filter(product =>
+    /t-?shirts?|tee|tshirt/i.test(product.name || '')
+  )
+
   return res.json({
     ...db.home,
     trandings,
-    arrivals
+    arrivals,
+    tshirts
   })
 }

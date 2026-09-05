@@ -1,10 +1,8 @@
 import { StandardLonghandProperties } from '@stitches/react/types/css'
 
-export function toLocaleString (value: number) {
-  return value.toLocaleString('pt-BR', {
-    currency: 'BRL',
-    style: 'currency'
-  })
+export function toLocaleString (value?: number | null) {
+  if (value == null || Number.isNaN(Number(value))) return 'UGX 0'
+  return `UGX ${Number(value).toLocaleString('en-UG')}`
 } 
 
 export function parseToVariant <T> (obj: Record<string, string>, property: keyof StandardLonghandProperties) {

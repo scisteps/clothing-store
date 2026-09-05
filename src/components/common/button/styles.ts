@@ -38,7 +38,7 @@ export const Button = styled('button', {
           opacity: 0.7
         },
         '> *': {
-          color: '$background',
+          color: '$foreground',
           fontWeight: 600
         },
         '&:hover, &:focus': {
@@ -65,7 +65,7 @@ export const Button = styled('button', {
       danger: {
         background: '$error',
         '*': {
-          color: '#fff',
+          color: '$foreground',
         },
         padding: '0.7rem 1.4rem',
         letterSpacing: '0.05rem',

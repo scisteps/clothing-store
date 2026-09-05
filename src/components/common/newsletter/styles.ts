@@ -31,9 +31,9 @@ export const Overlay = styled(Dialog.Overlay, {
 
 
 export const Content = styled(Dialog.Content, {
-  backgroundColor: '#fff',
+  backgroundColor: '$foreground',
   borderRadius: '8px',
-  boxShadow: 'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
+  boxShadow: '0 10px 30px rgba(0, 0, 0, .12)',
   position: 'fixed',
   top: '50%',
   left: '50%',

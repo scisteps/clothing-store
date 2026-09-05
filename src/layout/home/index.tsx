@@ -1,56 +1,40 @@
 import dynamic from 'next/dynamic'
-
-import { ButtonScrollTop } from '@/components'
-import { AboveFold, Header } from './components'
+import { ButtonScrollTop, FadeIn } from '@/components'
+import { AboveFold, Category, Header, Arrivals, TShirts } from './components'
 import * as Styles from './styles'
 import { HomePageProps } from './types'
 
-const Arrivals = dynamic(() => import('./components').then(t => t.Arrivals), {
-  ssr: false
-})
+const Footer = dynamic(() => import('./components').then(t => t.Footer), { ssr: false })
 
-const Category = dynamic(() => import('./components').then(t => t.Category), {
-  ssr: false
-})
-
-const SeasonSale = dynamic(() => import('./components').then(t => t.SeasonSale), {
-  ssr: false
-})
-
-const Collections = dynamic(() => import('./components').then(t => t.Collections), {
-  ssr: false
-})
-
-const Footer = dynamic(() => import('./components').then(t => t.Footer), {
-  ssr: false
-})
-
-
-export function HomeLayout (props: HomePageProps) {
-  const { 
-    data: {
-      above_fold,
-      collection_banner,
-      arrivals,
-      season_sale,
-      collections
-    } 
-  } = props
+export function HomeLayout ({ data }: HomePageProps) {
+  const tshirtProducts = data.tshirts?.length
+    ? data.tshirts
+    : data.arrivals?.filter((product) => /t-?shirts?|tee|tshirt/i.test(product.name || ''))
 
   return (
     <>
       <Header />
       <Styles.Container>
+        <FadeIn duration={1}>
+          <AboveFold data={data.above_fold} />
+        </FadeIn>
 
-        <AboveFold data={above_fold} />
-        <div>
-          <ButtonScrollTop />
-          <Category data={collection_banner} />
-          <Arrivals data={arrivals} />
-          <SeasonSale data={season_sale} />
-          <Collections data={collections} />
-        </div>
-        <Footer />
+        <main>
+     
+
+          <FadeIn delay={0.18}>
+            <Arrivals data={data.arrivals} />
+          </FadeIn>
+
+          <FadeIn delay={0.24}>
+<TShirts data={tshirtProducts} />       </FadeIn>
+        </main>
+
+        <FadeIn delay={0.3}>
+          <Footer />
+        </FadeIn>
+
+        <ButtonScrollTop />
       </Styles.Container>
     </>
   )

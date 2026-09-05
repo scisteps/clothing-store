@@ -1,14 +1,14 @@
 import { styled } from 'stitches.config'
 
 export const Container = styled('header', {
-  height: '65px',
+  height: '72px',
   width: '100%',
-  background: '$background',
-  border: '1px solid $border',
+  background: '$foreground',
+  borderBottom: '1px solid $border',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  padding: '1rem',
+  padding: '0 1rem',
   position: 'sticky',
   top: 0,
   zIndex: 10
@@ -16,7 +16,7 @@ export const Container = styled('header', {
 
 export const NavHeader = styled('div', {
   width: '100%',
-  height: '65px',
+  height: '72px',
   borderBottom: '1px solid $border',
   padding: '1rem',
   display: 'flex',
@@ -26,32 +26,28 @@ export const NavHeader = styled('div', {
 export const Navigation = styled('nav', {
   width: '100%',
   height: '100vh',
-  background: '$background',
-  transition: '0.2s ease-in',
+  background: '$foreground',
+  transition: 'transform .5s cubic-bezier(.22,1,.36,1)',
   transform: 'translateX(-100%)',
   position: 'fixed',
   top: 0,
   left: 0,
-  zIndex: 2,
-
+  zIndex: 20,
   variants: {
-    active: {
-      true: {
-        transform: 'translateX(0px)'
-      }
-    }
+    active: { true: { transform: 'translateX(0)' } }
   }
 })
 
 export const List = styled('ul', {
   display: 'flex',
   flexDirection: 'column',
-  gap: '1rem',
-  padding: '1rem',
+  gap: '1.25rem',
+  padding: '2rem 1.5rem',
   listStyle: 'none',
   a: {
-    fontSize: '$sm',
+    fontSize: '$md',
     textTransform: 'uppercase',
-    fontWeight: 400
+    fontWeight: 500,
+    color: '$heading'
   }
 })

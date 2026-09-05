@@ -43,6 +43,7 @@ export interface Home {
     action: Action
     image: string
   }>
+  tshirts: Product[]
 }
 
 export type HomeResponse = Home 
