@@ -1,38 +1,49 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiRequest, NextApiResponse } from 'next'
 
 import db from 'public/database.json'
 
-export default function handler (req: NextApiRequest, res: NextApiResponse) {
-  if (req.method !== 'GET') return res.status(404).send('Not found')
+export default function handler (
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
+  if (req.method !== 'GET') {
+    return res.status(404).send('Not found')
+  }
 
-  const arrivals = db.home.arrivals.map(id => 
-    db.products.find(value => value.id === id)
-  )
+  try {
+    const arrivals = db.home.arrivals
+      .map(id => db.products.find(product => product.id === id))
+      .filter(Boolean)
 
-  const trandings = db.home.trandings.map(tranding => {
+    const trandings = db.home.trandings.map(tranding => {
+      const products = db.products.filter(product =>
+        tranding.productIds.includes(product.id)
+      )
 
-    const products = db.products.filter(value => 
-      tranding
-        .productIds
-        .includes(value.id)
+      return {
+        ...tranding,
+        productIds: undefined,
+        products
+      }
+    })
+
+    // Use the product's category instead of its display name.
+    // This means renaming a product to "Crop Top" will not make it disappear.
+    const tshirts = db.products.filter(product =>
+      product.brand?.toLowerCase() === 'tshirts'
     )
 
-    return {
-      ...tranding,
-      productIds: undefined,
-      products
-    }
-  })
+    return res.status(200).json({
+      ...db.home,
+      trandings,
+      arrivals,
+      tshirts
+    })
+  } catch (error) {
+    console.error('HOME API ERROR:', error)
 
-const tshirts = db.products.filter(product =>
-  product.brand === 'tshirts' ||
-  /t-?shirts?|tee|tshirt|crop\s*top|croptop/i.test(product.name || '')
-)
-
-  return res.json({
-    ...db.home,
-    trandings,
-    arrivals,
-    tshirts
-  })
+    return res.status(500).json({
+      error: 'Failed to load homepage data'
+    })
+  }
 }
