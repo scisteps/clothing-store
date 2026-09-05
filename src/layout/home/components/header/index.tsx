@@ -22,15 +22,7 @@ export function Header () {
         <Image src={logo} alt="Paulyna Collections" width={120} height={70} style={{ objectFit: 'contain' }} />
       </Link>
 
-      <a
-        href="https://wa.me/?text=Hello%20Paulyna%20Collections"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Contact Paulyna on WhatsApp"
-        style={{ fontSize: '0.75rem', fontWeight: 600, textTransform: 'uppercase' }}
-      >
-        WhatsApp
-      </a>
+     
 
       <Styles.Navigation active={isOpen}>
         <Styles.NavHeader>
