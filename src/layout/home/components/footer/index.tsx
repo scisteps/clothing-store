@@ -2,6 +2,13 @@ import { Container, Typography } from '@/components'
 import * as Styles from './styles'
 
 export function Footer () {
+  const phoneNumber = '+256 704 453 703'
+  
+  const copyPhoneNumber = () => {
+    navigator.clipboard.writeText('+256704453703')
+    alert('Phone number copied!')
+  }
+
   return (
     <Styles.Container id="contact">
       <Container size="lg">
@@ -10,16 +17,22 @@ export function Footer () {
             Find something you love?
           </Typography>
           <Typography size="md" color="text">
-            Contact Paulyna Collections directly on WhatsApp for availability, sizing and orders.
+            Contact Paulyna Collections on WhatsApp for orders.
           </Typography>
-          <a
-            href="https://web.whatsapp.com/send/?phone=256704453703&text=Hello+Paulyna+Collections&type=phone_number&app_absent=0"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: '#f5f5f5', fontWeight: 600, textTransform: 'uppercase' }}
+          <button
+            onClick={copyPhoneNumber}
+            style={{ 
+              color: '#f5f5f5', 
+              fontWeight: 600, 
+              textTransform: 'uppercase',
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              fontSize: 'inherit'
+            }}
           >
-            Chat on WhatsApp
-          </a>
+            {phoneNumber} (Click to copy)
+          </button>
         </Styles.Contact>
         <Typography size="xsm">
           © Paulyna Collections {new Date().getFullYear()}.
