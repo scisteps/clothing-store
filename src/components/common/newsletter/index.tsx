@@ -39,7 +39,7 @@ export function Newsletter (props: NewsletterProps) {
             </Styles.Close>
           </Styles.ButtonIconView>
           <Styles.Figure>
-            <Image src="/newsletter.png" alt="newsletter" fill />
+            <Image src="/Group1.png" alt="newsletter" fill />
           </Styles.Figure>
           <Styles.FormView>
             <Typography as="strong" size="md" color="heading">Subscribe Newsletter.</Typography>

@@ -48,7 +48,7 @@ export function Info (props: InfoProps) {
     const discount = promotion.value * 100
 
     return (
-      <Tag variant="discount">{`sale ${discount}%`}</Tag>
+      <Tag variant="discount"> </Tag>
     )
   }
 
@@ -56,7 +56,7 @@ export function Info (props: InfoProps) {
     if (!is_new) return null
 
     return (
-      <Tag variant="new">new</Tag>
+      <Tag variant="new"> </Tag>
     )
   }
 

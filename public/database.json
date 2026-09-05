@@ -306,9 +306,9 @@
         "value": 0,
         "end_date": ""
       },
-      "description": "Stylish Trudy Sag T-shirt.",
+      "description": "Stylish Trudy Sag T-Shirt.",
       "rate": 5,
-      "name": "Trudy Sag T-Shirt",
+      "name": "croptop",
       "price": 30000,
       "sizes": [
         {
@@ -349,7 +349,7 @@
       },
       "description": "Stylish Trudy Sag T-shirt.",
       "rate": 5,
-      "name": "Trudy Sag T-Shirt 2",
+"name": "Crop Top",
       "price": 30000,
       "sizes": [
         {
@@ -390,7 +390,7 @@
       },
       "description": "Stylish D-Rings T-shirt.",
       "rate": 5,
-      "name": "D-Rings T-Shirt",
+      "name": "cheers croptop",
       "price": 30000,
       "sizes": [
         {
