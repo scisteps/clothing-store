@@ -13,7 +13,7 @@ export function Footer () {
             Contact Paulyna Collections directly on WhatsApp for availability, sizing and orders.
           </Typography>
           <a
-            href="https://wa.me/256704453703?text=Hello%20Paulyna%20Collections"
+            href="https://web.whatsapp.com/send/?phone=256704453703&text=Hello+Paulyna+Collections&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: '#f5f5f5', fontWeight: 600, textTransform: 'uppercase' }}
