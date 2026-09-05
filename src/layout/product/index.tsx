@@ -7,8 +7,7 @@ import { ProductItem } from '@/layout/home/components/product-item'
 import { ProductLayoutProps } from './types'
 import { toLocaleString } from '@/utils/helpers'
 
-const WHATSAPP_NUMBER = '+256704453703'
-
+const WHATSAPP_NUMBER = '256704453703'
 export function ProductLayout ({ data, relatedProducts = [] }: ProductLayoutProps) {
   const [selectedImage, setSelectedImage] = useState(0)
   const [selectedSize, setSelectedSize] = useState(data?.sizes?.[0])
