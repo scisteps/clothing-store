@@ -9,8 +9,18 @@ export const Container = styled('div', {
   width: 'max-content',
 
   variants: {
-    new: { background: '$secondary' },
-    soldOut: { background: '$primary' },
-    discount: { background: '$secondary' },
+    variant: {
+      new: {
+        background: '$secondary'
+      },
+
+      soldOut: {
+        background: '$primary'
+      },
+
+      discount: {
+        background: '$secondary'
+      }
+    }
   }
 })

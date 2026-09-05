@@ -32,8 +32,10 @@ export function TShirts({ data = [] }: TShirtsProps) {
               <ProductItem
                 data={{
                   ...product,
-                  images: [product.images?.[0] || collectionImages.tshirts[index % collectionImages.tshirts.length]]
-                }}
+images: [
+  product.images?.[0] ||
+  collectionImages.tshirts[index % collectionImages.tshirts.length].src
+]                }}
               />
             </div>
           ))}

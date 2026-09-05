@@ -16,17 +16,46 @@ export function Arrivals ({ data }: ArrivalsProps) {
     }
   })
 
-  const getImageForProduct = (product: any, index: number) => {
-    const name = product.name?.toLowerCase() || ''
-    if (name.includes('scrunchie')) return productImages[`scrunchie${(index % 4) + 1}`] || productImages.scrunchie1
-    if (name.includes('travel bag') && name.includes('medium')) return productImages.travelBagMedium
-    if (name.includes('backpack')) return productImages.backpack
-    if (name.includes('toilet')) return productImages.toiletBag
-    if (name.includes('travel bag') && name.includes('big')) return productImages.travelBagBig
-    if (name.includes('laptop')) return productImages.laptopSleeve
-    if (name.includes('sanitary')) return productImages.sanitaryBag
-    return productImages.travelBagMedium
+const getImageForProduct = (product: any, index: number): string => {
+  const name = product.name?.toLowerCase() || ''
+
+  if (name.includes('scrunchie')) {
+    const scrunchieImages = [
+      productImages.scrunchie1,
+      productImages.scrunchie2,
+      productImages.scrunchie3,
+      productImages.scrunchie4
+    ]
+
+    return scrunchieImages[index % scrunchieImages.length].src
   }
+
+  if (name.includes('travel bag') && name.includes('medium')) {
+    return productImages.travelBagMedium.src
+  }
+
+  if (name.includes('backpack')) {
+    return productImages.backpack.src
+  }
+
+  if (name.includes('toilet')) {
+    return productImages.toiletBag.src
+  }
+
+  if (name.includes('travel bag') && name.includes('big')) {
+    return productImages.travelBagBig.src
+  }
+
+  if (name.includes('laptop')) {
+    return productImages.laptopSleeve.src
+  }
+
+  if (name.includes('sanitary')) {
+    return productImages.sanitaryBag.src
+  }
+
+  return productImages.travelBagMedium.src
+}
 
   return (
     <Styles.Container id="products">
