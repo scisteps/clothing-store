@@ -10,6 +10,12 @@ export function Tag (props: PropsWithChildren<TagProps>) {
   } = props
 
   return (
-    <Styles.Container variant={variant}>{children}</Styles.Container>
+    <Styles.Container
+      new={variant === 'new'}
+      soldOut={variant === 'soldOut'}
+      discount={variant === 'discount'}
+    >
+      {children}
+    </Styles.Container>
   )
 }
