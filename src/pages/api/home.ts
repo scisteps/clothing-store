@@ -7,15 +7,25 @@ export default function handler (
   res: NextApiResponse
 ) {
   if (req.method !== 'GET') {
-    return res.status(404).send('Not found')
+    return res.status(404).json({
+      error: 'Not found'
+    })
   }
 
   try {
-    const arrivals = db.home.arrivals
-      .map(id => db.products.find(product => product.id === id))
+    console.log('HOME API START')
+
+    console.log('Database loaded:', !!db)
+    console.log('Products:', db?.products?.length)
+    console.log('Home:', !!db?.home)
+
+    const arrivals = (db.home?.arrivals || [])
+      .map(id =>
+        db.products.find(product => product.id === id)
+      )
       .filter(Boolean)
 
-    const trandings = db.home.trandings.map(tranding => {
+    const trandings = (db.home?.trandings || []).map(tranding => {
       const products = db.products.filter(product =>
         tranding.productIds.includes(product.id)
       )
@@ -27,11 +37,13 @@ export default function handler (
       }
     })
 
-    // Use the product's category instead of its display name.
-    // This means renaming a product to "Crop Top" will not make it disappear.
     const tshirts = db.products.filter(product =>
       product.brand?.toLowerCase() === 'tshirts'
     )
+
+    console.log('Arrivals:', arrivals.length)
+    console.log('Trending:', trandings.length)
+    console.log('T-Shirts:', tshirts.length)
 
     return res.status(200).json({
       ...db.home,
@@ -40,10 +52,15 @@ export default function handler (
       tshirts
     })
   } catch (error) {
-    console.error('HOME API ERROR:', error)
+    console.error('========== HOME API ERROR ==========')
+    console.error(error)
+    console.error('====================================')
 
     return res.status(500).json({
-      error: 'Failed to load homepage data'
+      error: 'Failed to load homepage data',
+      message: error instanceof Error
+        ? error.message
+        : String(error)
     })
   }
 }
