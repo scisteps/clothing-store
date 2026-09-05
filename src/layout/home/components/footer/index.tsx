@@ -4,9 +4,13 @@ import * as Styles from './styles'
 export function Footer () {
   const phoneNumber = '+256 704 453 703'
   
-  const copyPhoneNumber = () => {
-    navigator.clipboard.writeText('+256704453703')
-    alert('Phone number copied!')
+  const copyPhoneNumber = async () => {
+    try {
+      await navigator.clipboard.writeText('+256704453703')
+      alert('Phone number copied!')
+    } catch (err) {
+      console.error('Failed to copy:', err)
+    }
   }
 
   return (
@@ -20,7 +24,7 @@ export function Footer () {
             Contact Paulyna Collections directly on WhatsApp for availability, sizing and orders.
           </Typography>
           
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px', marginTop: '20px' }}>
             <button
               onClick={copyPhoneNumber}
               style={{
@@ -55,9 +59,9 @@ export function Footer () {
               </svg>
               {phoneNumber}
             </button>
-            <Typography size="xsm" color="text" style={{ fontSize: '12px', opacity: 0.8 }}>
+            <span style={{ fontSize: '12px', opacity: 0.8, color: '#666' }}>
               Click to copy number
-            </Typography>
+            </span>
           </div>
         </Styles.Contact>
         <Typography size="xsm">
