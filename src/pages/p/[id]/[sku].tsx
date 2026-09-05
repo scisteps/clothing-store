@@ -15,16 +15,21 @@ export const getServerSideProps: GetServerSideProps<ProductPageProps> = async (c
     }
   }
 }
+
 export default function ProductPage (props: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const { data } = props
+
+  if (!data) {
+    return <div>Product not found</div>
+  }
 
   return (
     <>
       <Head 
-        title={`${data.name} | Floreza`}
+        title={`${data.name} | Paulyna Collections`}
         description={data.description}
       />
-      <ProductLayout {...props} />
+      <ProductLayout data={data} />
     </>
   )
 }

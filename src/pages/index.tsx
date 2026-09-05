@@ -20,7 +20,7 @@ export default function HomePage (props: InferGetServerSidePropsType<typeof getS
   
   return (
     <>
-      <Head title="Floreza | Home" description="Home page" />
+      <Head title="Paulyna | Home" description="Home page" />
       <HomeLayout {...props} />
     </>
   )

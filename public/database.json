@@ -1,31 +1,23 @@
 {
   "products": [
     {
-      "sku": "FZSHFAX",
+      "sku": "SCRUNCH-L-001",
       "id": 1,
-      "is_new": false,
+      "is_new": true,
       "is_sold_out": false,
       "promotion": {
-        "value": 0.23,
-        "end_date": "2023-03-32T18:10:54.463Z"
+        "value": 0,
+        "end_date": ""
       },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "brand": "shoes",
-      "rate": 3,
-      "name": "Faxon Canvas Low-Top Sneaker",
-      "price": 400,
+      "description": "Pack of 3 large scrunchies. Perfect for thick hair and everyday use.",
+      "brand": "scrunchies",
+      "rate": 5,
+      "name": "Large Scrunchies (3 Pack)",
+      "price": 12000,
       "sizes": [
         {
-          "label": "S",
-          "value": 1
-        },
-        {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
+          "label": "Large",
+          "value": 3
         }
       ],
       "colors": [
@@ -46,683 +38,337 @@
         }
       ],
       "images": [
-        "http://zwin.io/react/stoon/assets/img/arrival/1.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/1.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/1.png"
+        "/images/scrunch1.jpg",
+        "/images/scrunch2.jpg",
+        "/images/scrunch3.jpg",
+        "/images/scrunch4.jpg"
       ]
     },
     {
-      "sku": "FZCSVI",
+      "sku": "DUFFEL-M-001",
       "id": 2,
       "is_new": true,
       "is_sold_out": false,
-      "brand": "clothes",
+      "brand": "duffelbags",
       "promotion": {
         "value": 0,
         "end_date": ""
       },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "rate": 4,
-      "name": "Viscose-Cashmere Scarf",
-      "price": 547,
+      "description": "Medium travel bag perfect for weekend trips. Durable and spacious.",
+      "rate": 5,
+      "name": "Travel Bag (Medium)",
+      "price": 40000,
       "sizes": [
         {
-          "label": "S",
+          "label": "Medium",
           "value": 1
-        },
-        {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
         }
       ],
       "colors": [
         {
-          "color": "#005B96"
+          "value": "#005B96"
         },
         {
-          "color": "#ED1B4C"
+          "value": "#ED1B4C"
         },
         {
-          "color": "#2AB7CA"
-        },
-        {
-          "color": "#FED766"
-        },
-        {
-          "color": "#E6E6EA"
+          "value": "#2AB7CA"
         }
       ],
       "images": [
-        "http://zwin.io/react/stoon/assets/img/arrival/1.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/1.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/1.png"
+        "/images/duffel1.jpg",
+        "/images/duffel2.jpg",
+        "/images/duffel3.jpg"
       ]
     },
     {
-      "sku": "FZCSFP",
+      "sku": "DUFFEL-BP-001",
       "id": 3,
-      "is_sold_out": false,
       "is_new": false,
+      "is_sold_out": false,
+      "brand": "duffelbags",
       "promotion": {
         "value": 0,
         "end_date": ""
       },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "brand": "clothes",
+      "description": "Versatile backpack for daily use or short trips.",
       "rate": 4,
-      "name": "FPlaid Cotton Oxford Shirt",
-      "price": 547,
+      "name": "Backpack",
+      "price": 35000,
       "sizes": [
         {
-          "label": "S",
+          "label": "Standard",
           "value": 1
-        },
-        {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
         }
       ],
       "colors": [
         {
-          "color": "#005B96"
+          "value": "#005B96"
         },
         {
-          "color": "#ED1B4C"
-        },
-        {
-          "color": "#2AB7CA"
-        },
-        {
-          "color": "#FED766"
-        },
-        {
-          "color": "#E6E6EA"
+          "value": "#ED1B4C"
         }
       ],
       "images": [
-        "http://zwin.io/react/stoon/assets/img/arrival/3.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/3.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/3.png"
+        "/images/duffel1.jpg",
+        "/images/duffel2.jpg",
+        "/images/duffel3.jpg"
       ]
     },
     {
-      "sku": "FZCSRO",
+      "sku": "DUFFEL-TB-001",
       "id": 4,
-      "is_sold_out": false,
       "is_new": false,
+      "is_sold_out": false,
+      "brand": "duffelbags",
       "promotion": {
         "value": 0,
         "end_date": ""
       },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "brand": "clothes",
+      "description": "Compact toilet bag for your travel essentials.",
       "rate": 4,
-      "name": "Round neck sweater",
-      "price": 320,
+      "name": "Toilet Bag",
+      "price": 15000,
       "sizes": [
         {
-          "label": "S",
+          "label": "Standard",
           "value": 1
-        },
-        {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
         }
       ],
       "colors": [
         {
-          "color": "#005B96"
+          "value": "#005B96"
         },
         {
-          "color": "#ED1B4C"
-        },
-        {
-          "color": "#2AB7CA"
-        },
-        {
-          "color": "#FED766"
-        },
-        {
-          "color": "#E6E6EA"
+          "value": "#ED1B4C"
         }
       ],
       "images": [
-        "http://zwin.io/react/stoon/assets/img/arrival/4.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/4.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/4.png"
+        "/images/duffel1.jpg",
+        "/images/duffel2.jpg",
+        "/images/duffel3.jpg"
       ]
     },
     {
-      "sku": "FZCSCAN",
+      "sku": "DUFFEL-TBL-001",
       "id": 5,
-      "is_sold_out": false,
       "is_new": false,
+      "is_sold_out": false,
+      "brand": "duffelbags",
       "promotion": {
         "value": 0,
         "end_date": ""
       },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "brand": "clothes",
-      "rate": 4,
-      "name": "Faxon Canvas Low-Top Sneaker",
-      "price": 320,
+      "description": "Large travel bag for extended trips.",
+      "rate": 5,
+      "name": "Travel Bag (Big)",
+      "price": 45000,
       "sizes": [
         {
-          "label": "S",
+          "label": "Large",
           "value": 1
-        },
-        {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
         }
       ],
       "colors": [
         {
-          "color": "#005B96"
+          "value": "#005B96"
         },
         {
-          "color": "#ED1B4C"
-        },
-        {
-          "color": "#2AB7CA"
-        },
-        {
-          "color": "#FED766"
-        },
-        {
-          "color": "#E6E6EA"
+          "value": "#ED1B4C"
         }
       ],
       "images": [
-        "http://zwin.io/react/stoon/assets/img/arrival/5.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/5.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/5.png"
+        "/images/duffel1.jpg",
+        "/images/duffel2.jpg",
+        "/images/duffel3.jpg"
       ]
     },
     {
-      "sku": "FZCSSA",
+      "sku": "DUFFEL-LS-001",
       "id": 6,
-      "is_sold_out": false,
       "is_new": false,
+      "is_sold_out": false,
+      "brand": "duffelbags",
       "promotion": {
-        "value": 0.23,
+        "value": 0,
         "end_date": ""
       },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "brand": "clothes",
+      "description": "Protective laptop sleeve bag for your device.",
       "rate": 4,
-      "name": "Faxon Canvas Low-Top Sneaker",
-      "price": 320,
+      "name": "Laptop Sleeve Bag",
+      "price": 25000,
       "sizes": [
         {
-          "label": "S",
+          "label": "13-14 inch",
           "value": 1
         },
         {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
+          "label": "15-16 inch",
+          "value": 1
         }
       ],
       "colors": [
         {
-          "color": "#005B96"
+          "value": "#005B96"
         },
         {
-          "color": "#ED1B4C"
-        },
-        {
-          "color": "#2AB7CA"
-        },
-        {
-          "color": "#FED766"
-        },
-        {
-          "color": "#E6E6EA"
+          "value": "#ED1B4C"
         }
       ],
       "images": [
-        "http://zwin.io/react/stoon/assets/img/arrival/6.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/6.png",
-        "http://zwin.io/react/stoon/assets/img/arrival/6.png"
+        "/images/duffel1.jpg",
+        "/images/duffel2.jpg",
+        "/images/duffel3.jpg"
       ]
     },
     {
-      "sku": "FZCSDS",
+      "sku": "SANITARY-PB-001",
       "id": 7,
-      "is_sold_out": true,
       "is_new": false,
-      "promotion": {
-        "value": 0.23,
-        "end_date": ""
-      },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "brand": "clothes",
-      "rate": 4,
-      "name": "Faxon Canvas Low-Top Sneaker",
-      "price": 320,
-      "sizes": [
-        {
-          "label": "S",
-          "value": 1
-        },
-        {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
-        }
-      ],
-      "colors": [
-        {
-          "color": "#005B96"
-        },
-        {
-          "color": "#ED1B4C"
-        },
-        {
-          "color": "#2AB7CA"
-        },
-        {
-          "color": "#FED766"
-        },
-        {
-          "color": "#E6E6EA"
-        }
-      ],
-      "images": [
-        "http://zwin.io/react/stoon/assets/img/tranding/1.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/1.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/1.png"
-      ]
-    },
-    {
-      "sku": "FZCSDP",
-      "id": 8,
       "is_sold_out": false,
-      "is_new": true,
-      "promotion": {
-        "value": 0.12,
-        "end_date": ""
-      },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "brand": "clothes",
-      "rate": 4,
-      "name": "Two-Tone Sleeveless Dress",
-      "price": 320,
-      "sizes": [
-        {
-          "label": "S",
-          "value": 1
-        },
-        {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
-        }
-      ],
-      "colors": [
-        {
-          "color": "#005B96"
-        },
-        {
-          "color": "#ED1B4C"
-        },
-        {
-          "color": "#2AB7CA"
-        },
-        {
-          "color": "#FED766"
-        },
-        {
-          "color": "#E6E6EA"
-        }
-      ],
-      "images": [
-        "http://zwin.io/react/stoon/assets/img/tranding/3.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/3.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/3.png"
-      ]
-    },
-    {
-      "sku": "FZCSPL",
-      "id": 9,
-      "is_sold_out": false,
-      "is_new": false,
+      "brand": "accessories",
       "promotion": {
         "value": 0,
         "end_date": ""
       },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "brand": "clothes",
-      "rate": 4,
-      "name": "Viscose-Cashmere Scarf",
-      "price": 320,
+      "description": "Portable sanitary pad bag for discreet storage.",
+      "rate": 5,
+      "name": "Portable Sanitary Pad Bag",
+      "price": 5000,
       "sizes": [
         {
-          "label": "S",
+          "label": "Standard",
           "value": 1
-        },
-        {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
         }
       ],
       "colors": [
         {
-          "color": "#005B96"
+          "value": "#005B96"
         },
         {
-          "color": "#ED1B4C"
+          "value": "#ED1B4C"
         },
         {
-          "color": "#2AB7CA"
+          "value": "#2AB7CA"
         },
         {
-          "color": "#FED766"
-        },
-        {
-          "color": "#E6E6EA"
+          "value": "#FED766"
         }
       ],
       "images": [
-        "http://zwin.io/react/stoon/assets/img/tranding/4.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/4.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/4.png"
-      ]
-    },
-    {
-      "sku": "FZCSXS",
-      "id": 10,
-      "is_sold_out": false,
-      "is_new": false,
-      "promotion": {
-        "value": 0,
-        "end_date": ""
-      },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "brand": "clothes",
-      "rate": 4,
-      "name": "Viscose-Cashmere Scarf",
-      "price": 320,
-      "sizes": [
-        {
-          "label": "S",
-          "value": 1
-        },
-        {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
-        }
-      ],
-      "colors": [
-        {
-          "color": "#005B96"
-        },
-        {
-          "color": "#ED1B4C"
-        },
-        {
-          "color": "#2AB7CA"
-        },
-        {
-          "color": "#FED766"
-        },
-        {
-          "color": "#E6E6EA"
-        }
-      ],
-      "images": [
-        "http://zwin.io/react/stoon/assets/img/tranding/4.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/4.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/4.png"
-      ]
-    },
-    {
-      "sku": "FZCSVB",
-      "id": 11,
-      "is_sold_out": false,
-      "is_new": true,
-      "promotion": {
-        "value": 0,
-        "end_date": ""
-      },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "brand": "clothes",
-      "rate": 4,
-      "name": "Round neck sweater",
-      "price": 320,
-      "sizes": [
-        {
-          "label": "S",
-          "value": 1
-        },
-        {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
-        }
-      ],
-      "colors": [
-        {
-          "color": "#005B96"
-        },
-        {
-          "color": "#ED1B4C"
-        },
-        {
-          "color": "#2AB7CA"
-        },
-        {
-          "color": "#FED766"
-        },
-        {
-          "color": "#E6E6EA"
-        }
-      ],
-      "images": [
-        "http://zwin.io/react/stoon/assets/img/tranding/5.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/5.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/5.png"
-      ]
-    },
-    {
-      "sku": "FZCSJH",
-      "id": 12,
-      "is_sold_out": false,
-      "is_new": true,
-      "promotion": {
-        "value": 0,
-        "end_date": ""
-      },
-      "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "brand": "clothes",
-      "rate": 4,
-      "name": "Viscose-Cashmere Scarf",
-      "price": 320,
-      "sizes": [
-        {
-          "label": "S",
-          "value": 1
-        },
-        {
-          "label": "M",
-          "value": 2
-        },
-        {
-          "label": "G",
-          "value": 2
-        }
-      ],
-      "colors": [
-        {
-          "color": "#005B96"
-        },
-        {
-          "color": "#ED1B4C"
-        },
-        {
-          "color": "#2AB7CA"
-        },
-        {
-          "color": "#FED766"
-        },
-        {
-          "color": "#E6E6EA"
-        }
-      ],
-      "images": [
-        "http://zwin.io/react/stoon/assets/img/tranding/6.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/6.png",
-        "http://zwin.io/react/stoon/assets/img/tranding/6.png"
+        "/images/duffel1.jpg",
+        "/images/duffel2.jpg",
+        "/images/duffel3.jpg"
       ]
     }
   ],
   "home": {
     "above_fold": [
       {
-        "title": "Favorite clothing",
-        "sub_title": "30% OFF",
-        "image": "http://zwin.io/react/stoon/assets/img/banner/11.png",
+        "title": "Duffel Bags Collection",
+        "sub_title": "Quality Travel Bags",
+        "image": "/images/duffel1.jpg",
         "action": {
-          "label": "get collection",
-          "path": ""
+          "label": "Shop Now",
+          "path": "/collections/duffelbags"
         }
       },
       {
-        "title": "Favorite clothing",
-        "sub_title": "30% OFF",
-        "image": "http://zwin.io/react/stoon/assets/img/banner/1.png",
+        "title": "Scrunchies Collection",
+        "sub_title": "Stylish & Comfortable",
+        "image": "/images/scrunch1.jpg",
         "action": {
-          "label": "get collection",
-          "path": ""
+          "label": "Shop Now",
+          "path": "/collections/scrunchies"
         }
       }
     ],
     "trandings": [
       {
         "id": 1,
-        "title": "Best sale",
-        "productIds": [1, 2 ,3 ,4 ,5, 6, 7]
+        "title": "Duffel Bags",
+        "productIds": [2, 3, 4, 5, 6]
       },
       {
-        "title": "Top rate",
-        "productIds": [1, 2 ,3 ,4 ,5]
+        "id": 2,
+        "title": "Scrunchies",
+        "productIds": [1]
       },
       {
-        "title": "Top sale",
-        "productIds": [1, 2 ,3 ,4 ,5]
+        "id": 3,
+        "title": "Accessories",
+        "productIds": [7]
       }
     ],
     "collection_banner": [
       {
-        "image": "http://zwin.io/react/stoon/assets/img/collection/1.png",
-        "collection_type": "woman"
+        "image": "/images/duffel1.jpg",
+        "collection_type": "Duffel Bags"
       },
       {
-        "image": "http://zwin.io/react/stoon/assets/img/collection/2.png",
-        "collection_type": "man"
+        "image": "/images/scrunch1.jpg",
+        "collection_type": "Scrunchies"
       },
       {
-        "image": "http://zwin.io/react/stoon/assets/img/collection/3.png",
-        "collection_type": "kids"
+        "image": "/images/duffel3.jpg",
+        "collection_type": "Accessories"
       }
     ],
-    "arrivals": [1, 3, 4, 2, 6, 8, 10],
+    "arrivals": [1, 2, 3, 4, 5, 6, 7],
     "season_sale": {
-      "title": "spring sale",
-      "description": "30% off on selected items",
-      "image": "http://zwin.io/react/stoon/assets/img/others/sales.png",
+      "title": "Special Offer",
+      "description": "Quality products at affordable prices",
+      "image": "/images/duffel2.jpg",
       "action": {
-        "label": "shop the sale",
-        "path": ""
+        "label": "Shop All",
+        "path": "/products"
       }
     },
-
     "collections": [
       {
         "id": 1,
-        "title": "Fashion clothing",
+        "title": "Duffel Bags",
         "action": {
-          "label": "shop now",
-          "path": ""
+          "label": "Shop Now",
+          "path": "/collections/duffelbags"
         },
-        "image": "http://zwin.io/react/stoon/assets/img/collection/4.png"
+        "image": "/images/duffel1.jpg"
       },
       {
         "id": 2,
-        "title": "Accessories",
+        "title": "Scrunchies",
         "action": {
-          "label": "shop now",
-          "path": ""
+          "label": "Shop Now",
+          "path": "/collections/scrunchies"
         },
-        "image": "http://zwin.io/react/stoon/assets/img/collection/5.png"
+        "image": "/images/scrunch1.jpg"
       },
       {
-        "id": 1,
-        "title": "Fashion clothing",
-        "action": {
-          "label": "shop now",
-          "path": ""
-        },
-        "image": "http://zwin.io/react/stoon/assets/img/collection/4.png"
-      },
-      {
-        "id": 2,
+        "id": 3,
         "title": "Accessories",
         "action": {
-          "label": "shop now",
-          "path": ""
+          "label": "Shop Now",
+          "path": "/collections/accessories"
         },
-        "image": "http://zwin.io/react/stoon/assets/img/collection/5.png"
-      } 
+        "image": "/images/duffel3.jpg"
+      }
     ]
   },
   "pdp": [
     {
-      "slug": "clothes",
-      "title": "clothes",
-      "products": [1, 2, 3, 4, 5]
+      "slug": "duffelbags",
+      "title": "Duffel Bags",
+      "products": [2, 3, 4, 5, 6]
     },
     {
-      "slug": "shoes",
-      "title": "shoes",
-      "products": [6, 7, 8, 9, 10, 11]
+      "slug": "scrunchies",
+      "title": "Scrunchies",
+      "products": [1]
+    },
+    {
+      "slug": "accessories",
+      "title": "Accessories",
+      "products": [7]
     }
   ]
 }

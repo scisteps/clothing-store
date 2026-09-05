@@ -10,9 +10,10 @@ import { breakpoints } from "@/constants/theme"
 import { Typography } from "@/components"
 import { toLocaleString } from "@/utils/helpers"
 import { ProductItem } from "../product-item"
+import { productImages } from '@/constants/images'
 
 export function Arrivals (props: ArrivalsProps) {
-  const  {
+  const {
     data
   } = props
 
@@ -37,16 +38,51 @@ export function Arrivals (props: ArrivalsProps) {
     }
   })
 
-  const renderSlides = data.map((value, index) => (
-    <div className="keen-slider__slide" key={index}>
-      <ProductItem data={value}/>
-    </div>
-  ))
-  
+  const getImageForProduct = (product: any, index: number) => {
+    // Map product names to images
+    if (product.name?.toLowerCase().includes('scrunchie')) {
+      return productImages[`scrunchie${(index % 4) + 1}`] || productImages.scrunchie1;
+    }
+    if (product.name?.toLowerCase().includes('travel bag') && product.name?.toLowerCase().includes('medium')) {
+      return productImages.travelBagMedium;
+    }
+    if (product.name?.toLowerCase().includes('backpack')) {
+      return productImages.backpack;
+    }
+    if (product.name?.toLowerCase().includes('toilet')) {
+      return productImages.toiletBag;
+    }
+    if (product.name?.toLowerCase().includes('travel bag') && product.name?.toLowerCase().includes('big')) {
+      return productImages.travelBagBig;
+    }
+    if (product.name?.toLowerCase().includes('laptop')) {
+      return productImages.laptopSleeve;
+    }
+    if (product.name?.toLowerCase().includes('sanitary')) {
+      return productImages.sanitaryBag;
+    }
+    // Default
+    return productImages.travelBagMedium;
+  }
+
+  const renderSlides = data.map((value, index) => {
+    const imageSrc = getImageForProduct(value, index);
+    
+    return (
+      <div className="keen-slider__slide" key={index}>
+        <ProductItem 
+          data={{
+            ...value,
+            images: [imageSrc, imageSrc, imageSrc] // ProductItem expects an array
+          }}
+        />
+      </div>
+    )
+  })
 
   return (
     <Styles.Container>
-      <SectionTitle>New Arrivals</SectionTitle>
+      <SectionTitle>Scrunchies</SectionTitle>
       <Styles.SlideView>
         <div ref={sliderRef} className="keen-slider">
           {renderSlides}

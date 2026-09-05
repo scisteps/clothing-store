@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { CartButton } from './components'
 import * as Styles from './styles'
+import logo from '../../../../images/paulyna logo.png';
 
 export function Header () {
   const [isOpen, setIsOpen] = useState(false)
@@ -24,7 +25,7 @@ export function Header () {
         />
       </Box>
       <Link href="/">
-        <Image src="/logo.svg" alt="logo" width={70} height={70} style={{ objectFit: 'contain' }} />
+        <Image src={logo} alt="logo" width={150} height={150} style={{ objectFit: 'contain' }} />
       </Link>
 
       <Box alignItems="center" gap={0.5}>

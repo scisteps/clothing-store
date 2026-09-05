@@ -85,7 +85,7 @@ export function ProductItem (props: ProductItemProps) {
           <Image src={image} alt="" fill />
         </Styles.Figure>
         <Styles.Info>
-          <Typography size="xsm" color="text">{`${sizes.length} cores`}</Typography>
+          <Typography size="xsm" color="text">{`${sizes.length} package`}</Typography>
           <Typography as="strong" fontWeight="400" color="heading" size="md">{name}</Typography>
           {renderPrice()}
           {renderDiscount()}

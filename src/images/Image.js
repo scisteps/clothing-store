@@ -1,0 +1,15 @@
+import duffel1 from './duffel1.jpg';
+import duffle4 from './duffle4.jpg';
+import duffel5 from './duffel5.jpg';
+import duffel3 from './duffel3.jpg';
+import backpack from './backpack.jpg';
+import laptopsleeve from './laptopsleeve.jpg';
+import laptopsleeve2 from './laptopsleeve2.jpg';
+import sanitarybag from './toiletbag.jpg';
+import duffel6 from './duffel6.jpg';
+import scrunchie3 from './scrunchie3.jpg';
+import sag3 from './trudy sag3.jpg';
+import sag1 from './trudy trudy sag1.jpg';
+import drings from './drings.jpg';
+import croptop1 from './black crop1.jpg';
+import blackbaddie from './blackbaddie1.jpg';

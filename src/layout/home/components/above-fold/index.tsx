@@ -9,7 +9,7 @@ import Image from 'next/image'
 import { breakpoints } from '@/constants/theme'
 import { useState } from 'react'
 import { Box, Button, Container } from '@/components'
-
+import quonnect from '../../../../images/Quonnect.png'
 export function AboveFold (props: AboveFoldProps) {
   const { data } = props
 
@@ -77,7 +77,7 @@ export function AboveFold (props: AboveFoldProps) {
       </Container>
       <Styles.Figure>
         <Image 
-          src={value.image} 
+          src={quonnect} 
           alt={value.title} 
           fill
           style={{ objectFit: 'cover' }} 

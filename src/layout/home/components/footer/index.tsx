@@ -120,7 +120,7 @@ export function Footer () {
       <Container size="lg">
         <Box marginTop={3} marginBottom={3}>
           <Typography size="xsm">
-            © Floreza {new Date().getFullYear()}. Powered with 🧡  by <a target="_blank" rel="noreferrer" href="https://github.com/censuradho">Censuradho</a>.</Typography>
+            © Paulyna Collections {new Date().getFullYear()}.</Typography>
         </Box>
       </Container>
     </>
