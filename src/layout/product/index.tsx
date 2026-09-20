@@ -6,8 +6,8 @@ import * as Styles from './styles'
 import { ProductItem } from '@/layout/home/components/product-item'
 import { ProductLayoutProps } from './types'
 import { toLocaleString } from '@/utils/helpers'
+import { getWhatsAppUrl } from '@/constants/contact'
 
-const WHATSAPP_NUMBER = '256704453703'
 export function ProductLayout ({ data, relatedProducts = [] }: ProductLayoutProps) {
   const [selectedImage, setSelectedImage] = useState(0)
   const [selectedSize, setSelectedSize] = useState(data?.sizes?.[0])
@@ -53,15 +53,11 @@ export function ProductLayout ({ data, relatedProducts = [] }: ProductLayoutProp
 
   const image = data.images?.[selectedImage] || data.images?.[0]
 
-  const message = encodeURIComponent(
-    `Hello Paulyna Collections, I am interested in "${data.name}"${
-      selectedSize ? `, size ${selectedSize.label}` : ''
-    }.`
-  )
+  const message = `Hello Paulyna Collections, I am interested in "${data.name}"${
+    selectedSize ? `, size ${selectedSize.label}` : ''
+  }.`
 
-  const whatsappUrl = WHATSAPP_NUMBER
-    ? `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`
-    : `https://wa.me/?text=${message}`
+  const whatsappUrl = getWhatsAppUrl(message)
 
   return (
     <Styles.Container>

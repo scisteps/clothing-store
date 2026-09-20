@@ -7,6 +7,7 @@ import {
   BsSearch
 } from '@meronex/icons/bs';
 import { CgMenuLeft, CgMenuRight } from '@meronex/icons/cg';
+import { FaWhatsapp } from '@meronex/icons/fa';
 import {
   IosArrowDown,
   IosArrowUp
@@ -23,5 +24,6 @@ export const icons = {
   arrowDown: IosArrowDown,
   close: AiOutlineClose,
   question: AiOutlineQuestionCircle,
-  email: AiOutlineMail
+  email: AiOutlineMail,
+  whatsapp: FaWhatsapp
 }

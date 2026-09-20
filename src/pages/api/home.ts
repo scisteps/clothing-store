@@ -38,7 +38,7 @@ export default function handler (
     })
 
     const tshirts = db.products.filter(product =>
-      product.brand?.toLowerCase() === 'tshirts'
+      product.brand?.toLowerCase() === 't-shirts'
     )
 
     console.log('Arrivals:', arrivals.length)
@@ -49,7 +49,8 @@ export default function handler (
       ...db.home,
       trandings,
       arrivals,
-      tshirts
+      tshirts,
+      products: db.products
     })
   } catch (error) {
     console.error('========== HOME API ERROR ==========')

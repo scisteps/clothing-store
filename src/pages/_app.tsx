@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import { useEffect } from 'react'
 import { globalStyle } from 'stitches.config'
+import { ButtonWhatsApp } from '@/components'
 
 export default function MyApp ({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -36,6 +37,7 @@ export default function MyApp ({ Component, pageProps }: AppProps) {
         }
       `}</style>
       <Component {...pageProps} />
+      <ButtonWhatsApp />
     </>
   )
 }

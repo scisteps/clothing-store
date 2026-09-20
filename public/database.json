@@ -1,23 +1,145 @@
 {
   "products": [
     {
-      "sku": "SCRUNCH-L-001",
+      "sku": "SCRUNCH-001",
       "id": 1,
       "is_new": true,
       "is_sold_out": false,
+      "brand": "Scrunchies",
       "promotion": {
         "value": 0,
         "end_date": ""
       },
-      "description": "Pack of 3 large scrunchies. Perfect for thick hair and everyday use.",
-      "brand": "scrunchies",
+      "description": "Large satin scrunchies in assorted colours and prints. Gentle on hair, available at 5k each.",
       "rate": 5,
-      "name": "Large Scrunchies (3 Pack)",
-      "price": 12000,
+      "name": "Scrunchies",
+      "price": 5000,
       "sizes": [
         {
           "label": "Large",
-          "value": 3
+          "value": 1
+        },
+        {
+          "label": "Medium",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#000000"
+        },
+        {
+          "value": "#ED1B4C"
+        },
+        {
+          "value": "#FF7A59"
+        },
+        {
+          "value": "#FED766"
+        },
+        {
+          "value": "#E6E6EA"
+        }
+      ],
+      "images": [
+        "/images/scrunch1.jpg",
+        "/images/scrunch2.jpg",
+        "/images/scrunch3.jpg",
+        "/images/scrunch4.jpg",
+        "/images/scrunch5.jpg",
+        "/images/scrunchie3.jpg",
+        "/images/ugscrunch.jpeg"
+      ]
+    },
+    {
+      "sku": "HAIRBOW-001",
+      "id": 2,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "Hair Accessories",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Satin hair bow clips for a soft, polished finish. Available at 5k.",
+      "rate": 5,
+      "name": "Hair Bow Clips",
+      "price": 5000,
+      "sizes": [
+        {
+          "label": "One size",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#ED1B4C"
+        },
+        {
+          "value": "#000000"
+        },
+        {
+          "value": "#E6E6EA"
+        }
+      ],
+      "images": [
+        "/images/hairbowclips.jpeg"
+      ]
+    },
+    {
+      "sku": "TABLEMAT-SET-001",
+      "id": 3,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "Table Mats",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Quilted ankara table mats sold as a set. Comes with 6 place mats and a matching table runner.",
+      "rate": 5,
+      "name": "Table Mats (Set)",
+      "price": 25000,
+      "sizes": [
+        {
+          "label": "Set of 6 + runner",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#ED1B4C"
+        },
+        {
+          "value": "#005B96"
+        },
+        {
+          "value": "#FED766"
+        }
+      ],
+      "images": [
+        "/images/tablemat1.jpg",
+        "/images/tablemat2.jpg"
+      ]
+    },
+    {
+      "sku": "SANITARY-PB-001",
+      "id": 4,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "Accessories",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Portable sanitary pad bag for discreet storage on the go. Available at 5k.",
+      "rate": 5,
+      "name": "Portable Sanitary Pad Bag",
+      "price": 5000,
+      "sizes": [
+        {
+          "label": "One size",
+          "value": 1
         }
       ],
       "colors": [
@@ -32,32 +154,135 @@
         },
         {
           "value": "#FED766"
-        },
-        {
-          "value": "#E6E6EA"
         }
       ],
       "images": [
-        "/images/scrunch1.jpg",
-        "/images/scrunch2.jpg",
-        "/images/scrunch3.jpg",
-        "/images/scrunch4.jpg"
+        "/images/portablesanitarypadbags.jpeg"
       ]
     },
     {
       "sku": "DUFFEL-M-001",
-      "id": 2,
+      "id": 5,
       "is_new": true,
       "is_sold_out": false,
-      "brand": "duffelbags",
+      "brand": "Bags",
       "promotion": {
         "value": 0,
         "end_date": ""
       },
-      "description": "Medium travel bag perfect for weekend trips. Durable and spacious.",
+      "description": "Medium duffel bag in assorted ankara prints. Quilted, roomy and perfect for weekend trips.",
       "rate": 5,
-      "name": "Travel Bag (Medium)",
+      "name": "Duffel Bag",
       "price": 40000,
+      "sizes": [
+        {
+          "label": "Medium",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#ED1B4C"
+        },
+        {
+          "value": "#005B96"
+        },
+        {
+          "value": "#2AB7CA"
+        },
+        {
+          "value": "#000000"
+        }
+      ],
+      "images": [
+        "/images/duffel1.jpg",
+        "/images/duffel2.jpg",
+        "/images/duffel3.jpg",
+        "/images/duffel4.jpg",
+        "/images/duffel5.jpg",
+        "/images/duffel6.jpg",
+        "/images/duffle4.jpg"
+      ]
+    },
+    {
+      "sku": "TRAVEL-BIG-001",
+      "id": 6,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "Bags",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Big travel bag with plenty of space for extended trips and heavy shopping.",
+      "rate": 5,
+      "name": "Travel Bag (Big)",
+      "price": 50000,
+      "sizes": [
+        {
+          "label": "Large",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#000000"
+        },
+        {
+          "value": "#ED1B4C"
+        }
+      ],
+      "images": [
+        "/images/duffelmed.jpeg"
+      ]
+    },
+    {
+      "sku": "BACKPACK-001",
+      "id": 7,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "Bags",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Quilted backpack with a drawstring top, side pockets and adjustable straps. Made in Uganda.",
+      "rate": 5,
+      "name": "Backpack",
+      "price": 40000,
+      "sizes": [
+        {
+          "label": "Standard",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#000000"
+        },
+        {
+          "value": "#B5651D"
+        }
+      ],
+      "images": [
+        "/images/backpack.jpg",
+        "/images/backpack2.jpeg"
+      ]
+    },
+    {
+      "sku": "TOILETBAG-M-001",
+      "id": 8,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "Bags",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Medium toilet bag for your travel essentials, with a zip pocket on the front.",
+      "rate": 5,
+      "name": "Toilet Bag (Medium)",
+      "price": 15000,
       "sizes": [
         {
           "label": "Medium",
@@ -69,129 +294,29 @@
           "value": "#005B96"
         },
         {
-          "value": "#ED1B4C"
-        },
-        {
-          "value": "#2AB7CA"
-        }
-      ],
-      "images": [
-        "/images/duffel1.jpg",
-        "/images/duffle4.jpg",
-        "/images/duffel5.jpg"
-      ]
-    },
-    {
-      "sku": "DUFFEL-BP-001",
-      "id": 3,
-      "is_new": false,
-      "is_sold_out": false,
-      "brand": "duffelbags",
-      "promotion": {
-        "value": 0,
-        "end_date": ""
-      },
-      "description": "Versatile backpack for daily use or short trips.",
-      "rate": 4,
-      "name": "Backpack",
-      "price": 35000,
-      "sizes": [
-        {
-          "label": "Standard",
-          "value": 1
-        }
-      ],
-      "colors": [
-        {
-          "value": "#005B96"
+          "value": "#FED766"
         },
         {
           "value": "#ED1B4C"
         }
       ],
       "images": [
-        "/images/backpack.jpg"
+        "/images/toiletbag.jpg",
+        "/images/toiletbag med.jpeg"
       ]
     },
     {
-      "sku": "DUFFEL-TB-001",
-      "id": 4,
-      "is_new": false,
+      "sku": "LAPTOP-SLEEVE-001",
+      "id": 9,
+      "is_new": true,
       "is_sold_out": false,
-      "brand": "duffelbags",
+      "brand": "Bags",
       "promotion": {
         "value": 0,
         "end_date": ""
       },
-      "description": "Compact toilet bag for your travel essentials.",
-      "rate": 4,
-      "name": "Toilet Bag",
-      "price": 15000,
-      "sizes": [
-        {
-          "label": "Standard",
-          "value": 1
-        }
-      ],
-      "colors": [
-        {
-          "value": "#005B96"
-        },
-        {
-          "value": "#ED1B4C"
-        }
-      ],
-      "images": [
-        "/images/toiletbag.jpg"
-      ]
-    },
-    {
-      "sku": "DUFFEL-TBL-001",
-      "id": 5,
-      "is_new": false,
-      "is_sold_out": false,
-      "brand": "duffelbags",
-      "promotion": {
-        "value": 0,
-        "end_date": ""
-      },
-      "description": "Large travel bag for extended trips.",
+      "description": "Protective laptop sleeve bag for your device, padded and available in assorted prints.",
       "rate": 5,
-      "name": "Travel Bag (Big)",
-      "price": 45000,
-      "sizes": [
-        {
-          "label": "Large",
-          "value": 1
-        }
-      ],
-      "colors": [
-        {
-          "value": "#005B96"
-        },
-        {
-          "value": "#ED1B4C"
-        }
-      ],
-      "images": [
-        "/images/duffel3.jpg",
-        "/images/duffel4.jpg",
-        "/images/duffel5.jpg",
-        "/images/duffel6.jpg"
-      ]
-    },
-    {
-      "sku": "DUFFEL-LS-001",
-      "id": 6,
-      "is_new": false,
-      "is_sold_out": false,
-      "brand": "duffelbags",
-      "promotion": {
-        "value": 0,
-        "end_date": ""
-      },
-      "description": "Protective laptop sleeve bag for your device.",
-      "rate": 4,
       "name": "Laptop Sleeve Bag",
       "price": 25000,
       "sizes": [
@@ -218,49 +343,11 @@
       ]
     },
     {
-      "sku": "SANITARY-PB-001",
-      "id": 7,
-      "is_new": false,
-      "is_sold_out": false,
-      "brand": "accessories",
-      "promotion": {
-        "value": 0,
-        "end_date": ""
-      },
-      "description": "Portable sanitary pad bag for discreet storage.",
-      "rate": 5,
-      "name": "Portable Sanitary Pad Bag",
-      "price": 5000,
-      "sizes": [
-        {
-          "label": "Standard",
-          "value": 1
-        }
-      ],
-      "colors": [
-        {
-          "value": "#005B96"
-        },
-        {
-          "value": "#ED1B4C"
-        },
-        {
-          "value": "#2AB7CA"
-        },
-        {
-          "value": "#FED766"
-        }
-      ],
-      "images": [
-        "/images/sanitarybag.jpg"
-      ]
-    },
-    {
       "sku": "TSHIRT-BLACKBADDIE-001",
-      "id": 8,
+      "id": 10,
       "is_new": true,
       "is_sold_out": false,
-      "brand": "tshirts",
+      "brand": "T-Shirts",
       "promotion": {
         "value": 0,
         "end_date": ""
@@ -297,59 +384,18 @@
       ]
     },
     {
-      "sku": "TSHIRT-TRUDYSAG3-001",
-      "id": 9,
-      "is_new": true,
-      "is_sold_out": false,
-      "brand": "tshirts",
-      "promotion": {
-        "value": 0,
-        "end_date": ""
-      },
-      "description": "Stylish Trudy Sag T-Shirt.",
-      "rate": 5,
-      "name": "croptop",
-      "price": 30000,
-      "sizes": [
-        {
-          "label": "Small",
-          "value": 1
-        },
-        {
-          "label": "Medium",
-          "value": 1
-        },
-        {
-          "label": "Large",
-          "value": 1
-        },
-        {
-          "label": "XL",
-          "value": 1
-        }
-      ],
-      "colors": [
-        {
-          "value": "#000000"
-        }
-      ],
-      "images": [
-        "/images/trudy sag3.png"
-      ]
-    },
-    {
       "sku": "TSHIRT-TRUDYSAG1-001",
-      "id": 10,
+      "id": 11,
       "is_new": true,
       "is_sold_out": false,
-      "brand": "tshirts",
+      "brand": "T-Shirts",
       "promotion": {
         "value": 0,
         "end_date": ""
       },
-      "description": "Stylish Trudy Sag T-shirt.",
+      "description": "Trudy Sag print T-shirt in black.",
       "rate": 5,
-"name": "Crop Top",
+      "name": "Trudy Sag T-Shirt",
       "price": 30000,
       "sizes": [
         {
@@ -379,18 +425,59 @@
       ]
     },
     {
-      "sku": "TSHIRT-DRINGS-001",
-      "id": 11,
+      "sku": "TSHIRT-TRUDYSAG3-001",
+      "id": 12,
       "is_new": true,
       "is_sold_out": false,
-      "brand": "tshirts",
+      "brand": "T-Shirts",
       "promotion": {
         "value": 0,
         "end_date": ""
       },
-      "description": "Stylish D-Rings T-shirt.",
+      "description": "Trudy Sag print crop top in black.",
       "rate": 5,
-      "name": "cheers croptop",
+      "name": "Trudy Sag Crop Top",
+      "price": 30000,
+      "sizes": [
+        {
+          "label": "Small",
+          "value": 1
+        },
+        {
+          "label": "Medium",
+          "value": 1
+        },
+        {
+          "label": "Large",
+          "value": 1
+        },
+        {
+          "label": "XL",
+          "value": 1
+        }
+      ],
+      "colors": [
+        {
+          "value": "#000000"
+        }
+      ],
+      "images": [
+        "/images/trudy sag3.png"
+      ]
+    },
+    {
+      "sku": "TSHIRT-DRINGS-001",
+      "id": 13,
+      "is_new": true,
+      "is_sold_out": false,
+      "brand": "T-Shirts",
+      "promotion": {
+        "value": 0,
+        "end_date": ""
+      },
+      "description": "Cheers print crop top in black.",
+      "rate": 5,
+      "name": "Cheers Crop Top",
       "price": 30000,
       "sizes": [
         {
@@ -421,17 +508,17 @@
     },
     {
       "sku": "TSHIRT-BLACKCROP-001",
-      "id": 12,
+      "id": 14,
       "is_new": true,
       "is_sold_out": false,
-      "brand": "tshirts",
+      "brand": "T-Shirts",
       "promotion": {
         "value": 0,
         "end_date": ""
       },
-      "description": "Stylish black crop T-shirt.",
+      "description": "Black crop T-shirt.",
       "rate": 5,
-      "name": "Black Crop T-Shirt",
+      "name": "Black Crop Top",
       "price": 30000,
       "sizes": [
         {
@@ -464,12 +551,21 @@
   "home": {
     "above_fold": [
       {
+        "title": "Paulyna Collections",
+        "sub_title": "Handmade Bags, Prints & More",
+        "image": "/images/profile.jpeg",
+        "action": {
+          "label": "Shop the Collection",
+          "path": "/#shop-by-category"
+        }
+      },
+      {
         "title": "Duffel Bags Collection",
         "sub_title": "Quality Travel Bags",
         "image": "/images/duffel1.jpg",
         "action": {
           "label": "Shop Now",
-          "path": "/products"
+          "path": "/#shop-by-category"
         }
       },
       {
@@ -478,92 +574,81 @@
         "image": "/images/scrunch1.jpg",
         "action": {
           "label": "Shop Now",
-          "path": "/products"
+          "path": "/#shop-by-category"
         }
       }
     ],
     "trandings": [
       {
         "id": 1,
-        "title": "Duffel Bags",
-        "productIds": [
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
+        "title": "Bags",
+        "productIds": [5, 6, 7, 8, 9]
       },
       {
         "id": 2,
         "title": "Scrunchies",
-        "productIds": [
-          1
-        ]
+        "productIds": [1]
       },
       {
         "id": 3,
-        "title": "Accessories",
-        "productIds": [
-          7
-        ]
+        "title": "Hair Accessories",
+        "productIds": [2]
       },
       {
         "id": 4,
+        "title": "Table Mats",
+        "productIds": [3]
+      },
+      {
+        "id": 5,
+        "title": "Accessories",
+        "productIds": [4]
+      },
+      {
+        "id": 6,
         "title": "T-Shirts",
-        "productIds": [
-          8,
-          9,
-          10,
-          11,
-          12
-        ]
+        "productIds": [10, 11, 12, 13, 14]
       }
     ],
     "collection_banner": [
       {
         "image": "/images/duffel1.jpg",
-        "collection_type": "Duffel Bags"
+        "collection_type": "Bags"
       },
       {
         "image": "/images/scrunch1.jpg",
         "collection_type": "Scrunchies"
       },
       {
+        "image": "/images/hairbowclips.jpeg",
+        "collection_type": "Hair Accessories"
+      },
+      {
+        "image": "/images/tablemat1.jpg",
+        "collection_type": "Table Mats"
+      },
+      {
         "image": "/images/blackbaddie.png",
         "collection_type": "T-Shirts"
       }
     ],
-    "arrivals": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12
-    ],
+    "arrivals": [1, 5, 7, 6, 8, 4, 2, 3, 10],
     "season_sale": {
       "title": "Special Offer",
       "description": "Quality products at affordable prices",
       "image": "/images/duffel2.jpg",
       "action": {
         "label": "Shop All",
-        "path": "/products"
+        "path": "/#shop-by-category"
       }
     },
     "collections": [
       {
         "id": 1,
-        "title": "Duffel Bags",
+        "title": "Bags",
         "action": {
           "label": "Shop Now",
-          "path": "/collections/duffelbags"
+          "path": "/c/bags"
         },
         "image": "/images/duffel1.jpg"
       },
@@ -572,25 +657,34 @@
         "title": "Scrunchies",
         "action": {
           "label": "Shop Now",
-          "path": "/collections/scrunchies"
+          "path": "/c/scrunchies"
         },
         "image": "/images/scrunch1.jpg"
       },
       {
         "id": 3,
-        "title": "Accessories",
+        "title": "Hair Accessories",
         "action": {
           "label": "Shop Now",
-          "path": "/collections/accessories"
+          "path": "/c/hairaccessories"
         },
-        "image": "/images/duffel3.jpg"
+        "image": "/images/hairbowclips.jpeg"
       },
       {
         "id": 4,
+        "title": "Table Mats",
+        "action": {
+          "label": "Shop Now",
+          "path": "/c/tablemats"
+        },
+        "image": "/images/tablemat1.jpg"
+      },
+      {
+        "id": 5,
         "title": "T-Shirts",
         "action": {
           "label": "Shop Now",
-          "path": "/collections/tshirts"
+          "path": "/c/tshirts"
         },
         "image": "/images/blackbaddie.png"
       }
@@ -598,40 +692,34 @@
   },
   "pdp": [
     {
-      "slug": "duffelbags",
-      "title": "Duffel Bags",
-      "products": [
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
+      "slug": "bags",
+      "title": "Bags",
+      "products": [5, 6, 7, 8, 9]
     },
     {
       "slug": "scrunchies",
       "title": "Scrunchies",
-      "products": [
-        1
-      ]
+      "products": [1]
+    },
+    {
+      "slug": "hairaccessories",
+      "title": "Hair Accessories",
+      "products": [2]
+    },
+    {
+      "slug": "tablemats",
+      "title": "Table Mats",
+      "products": [3]
     },
     {
       "slug": "accessories",
       "title": "Accessories",
-      "products": [
-        7
-      ]
+      "products": [4]
     },
     {
       "slug": "tshirts",
       "title": "T-Shirts",
-      "products": [
-        8,
-        9,
-        10,
-        11,
-        12
-      ]
+      "products": [10, 11, 12, 13, 14]
     }
   ]
 }

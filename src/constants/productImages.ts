@@ -1,4 +1,4 @@
-import Quonnect from '../images/Quonnect.png';
+import Quonnect from '../images/profile.jpeg';
 import backpack from '../images/backpack.jpg';
 import black_crop1 from '../images/black crop1.png';
 import blackbaddie from '../images/blackbaddie.png';

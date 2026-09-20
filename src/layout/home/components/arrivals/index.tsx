@@ -5,7 +5,6 @@ import * as Styles from './styles'
 import { ArrivalsProps } from './types'
 import { breakpoints } from '@/constants/theme'
 import { ProductItem } from '../product-item'
-import { productImages } from '@/constants/images'
 
 export function Arrivals ({ data }: ArrivalsProps) {
   const [sliderRef] = useKeenSlider({
@@ -16,55 +15,19 @@ export function Arrivals ({ data }: ArrivalsProps) {
     }
   })
 
-const getImageForProduct = (product: any, index: number): string => {
-  const name = product.name?.toLowerCase() || ''
-
-  if (name.includes('scrunchie')) {
-    const scrunchieImages = [
-      productImages.scrunchie1,
-      productImages.scrunchie2,
-      productImages.scrunchie3,
-      productImages.scrunchie4
-    ]
-
-    return scrunchieImages[index % scrunchieImages.length].src
-  }
-
-  if (name.includes('travel bag') && name.includes('medium')) {
-    return productImages.travelBagMedium.src
-  }
-
-  if (name.includes('backpack')) {
-    return productImages.backpack.src
-  }
-
-  if (name.includes('toilet')) {
-    return productImages.toiletBag.src
-  }
-
-  if (name.includes('travel bag') && name.includes('big')) {
-    return productImages.travelBagBig.src
-  }
-
-  if (name.includes('laptop')) {
-    return productImages.laptopSleeve.src
-  }
-
-  if (name.includes('sanitary')) {
-    return productImages.sanitaryBag.src
-  }
-
-  return productImages.travelBagMedium.src
-}
-
   return (
     <Styles.Container id="products">
       <SectionTitle>Featured Products</SectionTitle>
       <Styles.SlideView>
         <div ref={sliderRef} className="keen-slider">
-          {data?.map((value, index) => (
-            <div className="keen-slider__slide" key={value.id || index}>
-              <ProductItem data={{ ...value, images: [getImageForProduct(value, index)] }} />
+          {data?.map((value) => (
+            <div className="keen-slider__slide" key={value.id}>
+              <ProductItem
+                data={{
+                  ...value,
+                  images: value.images?.length ? [value.images[0]] : []
+                }}
+              />
             </div>
           ))}
         </div>

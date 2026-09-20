@@ -44,6 +44,7 @@ export interface Home {
     image: string
   }>
   tshirts: Product[]
+  products: Product[]
 }
 
 export type HomeResponse = Home 

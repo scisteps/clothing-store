@@ -29,7 +29,7 @@ export const getServerSideProps: GetServerSideProps<HomePageProps> = async () =>
   }))
 
   const tshirts = products.filter(
-    product => product.brand?.toLowerCase() === "tshirts"
+    product => product.brand?.toLowerCase() === "t-shirts"
   )
 
   return {
@@ -41,7 +41,8 @@ export const getServerSideProps: GetServerSideProps<HomePageProps> = async () =>
         arrivals,
         season_sale: db.home.season_sale,
         collections: db.home.collections,
-        tshirts
+        tshirts,
+        products
       }
     }
   }

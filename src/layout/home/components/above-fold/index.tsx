@@ -9,7 +9,7 @@ import Image from 'next/image'
 import { breakpoints } from '@/constants/theme'
 import { useState } from 'react'
 import { Box, Button, Container } from '@/components'
-import quonnect from '../../../../images/Quonnect.png'
+import quonnect from '../../../../images/profile.jpeg'
 export function AboveFold (props: AboveFoldProps) {
   const { data } = props
 
