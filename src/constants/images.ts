@@ -6,7 +6,7 @@ import duffel4 from  '../images/duffel4.jpg';
 import duffel5 from  '../images/duffel5.jpg';
 
 // Scrunchies
-import scrunch1 from  '../images/scrunch1.jpg';
+import scrunch1 from  '../images/ugscrunch.jpeg';
 import scrunch2 from '../images/scrunch2.jpg';
 import scrunch3 from  '../images/scrunch3.jpg';
 import scrunch4 from  '../images/scrunch4.jpg';

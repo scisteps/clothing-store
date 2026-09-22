@@ -1,6 +1,6 @@
 export const whatsapp = {
   /** international format, digits only, as expected by wa.me */
-  number: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '256704453703',
+  number: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '25677276821',
   display: '+256 704 453 703'
 }
 

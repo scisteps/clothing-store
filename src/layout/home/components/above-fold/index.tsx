@@ -25,7 +25,6 @@ export function AboveFold (props: AboveFoldProps) {
     [
       (slider) => {
         let timeout: any;
-
         let mouseOver = false
         function clearNextTimeout() {
           clearTimeout(timeout)
